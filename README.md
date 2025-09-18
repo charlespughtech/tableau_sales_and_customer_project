@@ -15,44 +15,39 @@
 
 ---
 
-## Table of Contents
-
-- [Project Overview](#project-overview)
-- [Data Architecture](#data-architecture)
-- [Important Links & Tools (Free)](#important-links--tools-free)
-- [Project Requirements](#project-requirements)
-  - [Sales Performance Dashboard](#sales-performance-dashboard)
-  - [Customer Analysis Dashboard](#customer-analysis-dashboard)
-- [Tableau Techniques Used (Basic to Advanced)](#tableau-techniques-used-basic-to-advanced)
-- [Repository Structure](#repository-structure)
-- [Licence](#licence)
-- [Contact](#contact)
-
----
-
 Welcome to my **Tableau Sales and Customer Dashboards Project** repository!
 
-## Project Overview {#project-overview}
+View the interactive dashboards on [Tableau Public](https://public.tableau.com/app/profile/charlespughtech/viz/tableau_sales_project/SalesDashboard).
 
-📖 **This project involves:**
+<a href="https://public.tableau.com/app/profile/charlespughtech/viz/tableau_sales_project/SalesDashboard">
+<img width="1174" height="872" alt="Sales Dashboard" src="https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/images/sales_dashboard.jpg" />
+</a>
+
+<a href="https://public.tableau.com/app/profile/charlespughtech/viz/tableau_sales_project/SalesDashboard">
+<img width="1174" height="872" alt="Customer Dashboard" src="https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/images/customer_dashboard.jpg" />
+</a>
+
+## 📖 Project Overview
+
+**This project involves:**
 - **Dashboard Creation:** Developing two interactive Tableau dashboards following a structured design process: analysing user story requirements, collecting specifications, choosing appropriate charts, drawing mockups, and selecting colours for the Sales Performance and Customer Analysis dashboards.
 - **Visualisations:** KPI overviews with text tables, monthly and weekly trend line charts, product subcategory comparison bar charts, sales by category pie charts, and geographic maps to support data-driven decisions for sales managers and executives.
 - **Data Integration:** Combining multiple CSV datasets to create a unified data model for analysis, with relationships established via Order ID and Postal Code.
 
 ---
 
-## Data Architecture {#data-architecture}
+## 🗃️ Data Architecture
 
-🗃️ This project uses four CSV datasets representing orders, customers, locations, and products. Relationships are established in Tableau to link data via Order ID (Orders to Customers and Products) and Postal Code (Orders to Location) for a seamless data model.
+This project uses four CSV datasets representing orders, customers, locations, and products. Relationships are established in Tableau to link data via Order ID (Orders to Customers and Products) and Postal Code (Orders to Location) for a seamless data model.
 - **Datasets:** [Orders.csv](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/datasets/non-eu/Orders.csv) (sales transactions), [Customers.csv](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/datasets/non-eu/Customers.csv) (customer details), [Location.csv](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/datasets/non-eu/Location.csv) (geographic data), [Products.csv](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/datasets/non-eu/Products.csv) (product information).
 - Data is available in both EU and non-EU number formats; non-EU version used for this project.
 - Download datasets from [DataWithBaraa](https://www.datawithbaraa.com/tableau/tableau-sales-project-thank-you/).
 
 ---
 
-## Important Links & Tools (Free) {#important-links--tools-free}
+## 🛠️ Important Links & Tools (Free)
 
-🛠️ - [**Datasets**](https://www.datawithbaraa.com/tableau/tableau-sales-project-thank-you/): Project datasets (CSV files in EU and non-EU formats).
+- [**Datasets**](https://www.datawithbaraa.com/tableau/tableau-sales-project-thank-you/): Project datasets (CSV files in EU and non-EU formats).
 - [**Tableau Desktop/Public**](https://www.tableau.com/products/desktop): Visualisation tool (free Public version available).
 - [**Git Repository**](https://github.com/charlespughtech/tableau_sales_and_customer_project): Project source code and files.
 - [**Project Mockups**](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/docs/mockup.pdf): Dashboard sketches.
@@ -61,9 +56,9 @@ Welcome to my **Tableau Sales and Customer Dashboards Project** repository!
 
 ---
 
-## Project Requirements {#project-requirements}
+## 📋 Project Requirements
 
-📋 ### Sales Performance Dashboard {#sales-performance-dashboard}
+### Sales Performance Dashboard
 #### Objective
 Present an overview of sales metrics and trends in order to analyse year-over-year sales performance and understand sales trends.
 
@@ -73,7 +68,7 @@ Specifications:
 - **Product Subcategory Comparison:** Compare sales performance by different product subcategories for the current year and the previous year using side-by-side bar charts; include a comparison of sales with profit via a combined bar and line chart.
 - **Weekly Trends for Sales & Profit:** Present weekly sales and profit data for the current year using line charts; display the average weekly values as reference lines; highlight weeks that are above and below the average to draw attention to sales & profit performance using conditional formatting.
 
-### Customer Analysis Dashboard {#customer-analysis-dashboard}
+### Customer Analysis Dashboard
 #### Objective
 Provide insights into customer segmentation, loyalty, and geographic distribution to support targeted marketing and sales strategies.
 
@@ -85,9 +80,8 @@ Specifications:
 
 ---
 
-## Tableau Techniques Used (Basic to Advanced) {#tableau-techniques-used-basic-to-advanced}
-
-🔎 - **Data Connections:** Imported four CSV files with custom delimiters (semicolon) and encodings (UTF-8 or Windows-1252); established inner joins and relationships between Orders (via Order ID to Customers and Products; Postal Code to Location) for a seamless, performant data model.
+## 🔎 Tableau Techniques Used (Basic to Advanced)
+- **Data Connections:** Imported four CSV files with custom delimiters (semicolon) and encodings (UTF-8 or Windows-1252); established inner joins and relationships between Orders (via Order ID to Customers and Products; Postal Code to Location) for a seamless, performant data model.
 - **Data Cleaning:** Formatted dates using DATETRUNC and DATEPART for month/year/week hierarchies; cleaned numeric fields (e.g., Sales, Profit with £ currency formatting, handling commas as decimal separators in non-EU data); replaced nulls in Quantity/Discount with zeros; standardised text fields like Segment and Category using string functions; created hierarchies for drill-down (e.g., Year > Month > Week).
 - **Calculated Fields:** Developed fields for Year-over-Year (YoY) growth using DATEDIFF and LOOKUP for previous value comparisons; monthly/weekly trends with DATETRUNC('month', [Order Date]) and DATETRUNC('week', [Order Date]); profit margins as [Profit]/[Sales]; dynamic KPIs with IF YEAR([Order Date]) = [Current Year Parameter] THEN SUM([Sales]) ELSE 0 END; highest/lowest month identification using RANK(SUM([Sales])) OVER (ORDER BY SUM([Sales]) DESC); above/below average flags with IF SUM([Sales]) > WINDOW_AVG(SUM([Sales])) THEN 'Above' ELSE 'Below' END.
 - **Parameters:** Implemented a "Current Year" parameter (integer list: 2020-2023) with parameter actions to dynamically toggle between years for filtering trends and comparisons; used for YoY calculations and dynamic titles like "Sales Trends for " + STR([Current Year Parameter]).
@@ -104,9 +98,9 @@ Specifications:
 
 ---
 
-## Repository Structure {#repository-structure}
+## 🗃️ Repository Structure
 
-🗃️ ```bash
+```bash
 tableau_sales_and_customer_project/
 │
 ├── datasets/                               # Project datasets (CSV files)
@@ -128,7 +122,9 @@ tableau_sales_and_customer_project/
 │   ├── [Icon - Filter Shown.png](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/images/Icon%20-%20Filter%20Shown.png)
 │   ├── [Icon - Logo.png](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/images/Icon%20-%20Logo.png)
 │   ├── [Icon - Sales Dashboard(active).png](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/images/Icon%20-%20Sales%20Dashboard(active).png)
-│   └── [Icon - Sales Dashboard.png](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/images/Icon%20-%20Sales%20Dashboard.png)
+│   ├── [Icon - Sales Dashboard.png](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/images/Icon%20-%20Sales%20Dashboard.png)
+│   ├── [sales_dashboard.jpg](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/images/sales_dashboard.jpg)
+│   └── [customer_dashboard.jpg](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/images/customer_dashboard.jpg)
 │
 ├── docs/                                  # Project documentation
 │   ├── [mockup.pdf](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/docs/mockup.pdf)                         # Dashboard sketches
@@ -143,9 +139,9 @@ tableau_sales_and_customer_project/
 
 ---
 
-## Licence {#licence}
+## © Licence
 
-© This project is licensed under the [MIT License](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/LICENSE). You are free to use, modify, and share this project with proper attribution.
+This project is licensed under the [MIT License](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/LICENSE). You are free to use, modify, and share this project with proper attribution.
 
 ---
 
@@ -153,9 +149,9 @@ tableau_sales_and_customer_project/
 
 ---
 
-## Contact {#contact}
+## 📩 Contact
 
-📩 **For any enquiries or further information, please contact**:
+**For any enquiries or further information, please contact**:
 
 **Charles Pugh** - Google-certified Data Analyst  
 **Website:** [https://charlespughtech.github.io/](https://charlespughtech.github.io/)  
