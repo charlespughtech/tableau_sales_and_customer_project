@@ -32,7 +32,7 @@
 
 Welcome to my **Tableau Sales and Customer Dashboards Project** repository!
 
-## 📖 Project Overview {#project-overview}
+## Project Overview {#project-overview}
 
 **This project involves:**
 - **Dashboard Creation:** Developing two interactive Tableau dashboards following a structured design process: analysing user story requirements, collecting specifications, choosing appropriate charts, drawing mockups, and selecting colours for the Sales Performance and Customer Analysis dashboards.
@@ -41,7 +41,7 @@ Welcome to my **Tableau Sales and Customer Dashboards Project** repository!
 
 ---
 
-## 🗃️ Data Architecture {#data-architecture}
+## Data Architecture {#data-architecture}
 
 This project uses four CSV datasets representing orders, customers, locations, and products. Relationships are established in Tableau to link data via Order ID (Orders to Customers and Products) and Postal Code (Orders to Location) for a seamless data model.
 - **Datasets:** [Orders.csv](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/datasets/non-eu/Orders.csv) (sales transactions), [Customers.csv](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/datasets/non-eu/Customers.csv) (customer details), [Location.csv](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/datasets/non-eu/Location.csv) (geographic data), [Products.csv](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/datasets/non-eu/Products.csv) (product information).
@@ -50,7 +50,7 @@ This project uses four CSV datasets representing orders, customers, locations, a
 
 ---
 
-## 🛠️ Important Links & Tools (Free) {#important-links--tools-free}
+## Important Links & Tools (Free) {#important-links--tools-free}
 
 - [**Datasets**](https://www.datawithbaraa.com/tableau/tableau-sales-project-thank-you/): Project datasets (CSV files in EU and non-EU formats).
 - [**Tableau Desktop/Public**](https://www.tableau.com/products/desktop): Visualisation tool (free Public version available).
@@ -61,7 +61,7 @@ This project uses four CSV datasets representing orders, customers, locations, a
 
 ---
 
-## 📋 Project Requirements {#project-requirements}
+## Project Requirements {#project-requirements}
 
 ### Sales Performance Dashboard {#sales-performance-dashboard}
 #### Objective
@@ -85,7 +85,7 @@ Specifications:
 
 ---
 
-## 🔎 Tableau Techniques Used (Basic to Advanced) {#tableau-techniques-used-basic-to-advanced}
+## Tableau Techniques Used (Basic to Advanced) {#tableau-techniques-used-basic-to-advanced}
 - **Data Connections:** Imported four CSV files with custom delimiters (semicolon) and encodings (UTF-8 or Windows-1252); established inner joins and relationships between Orders (via Order ID to Customers and Products; Postal Code to Location) for a seamless, performant data model.
 - **Data Cleaning:** Formatted dates using DATETRUNC and DATEPART for month/year/week hierarchies; cleaned numeric fields (e.g., Sales, Profit with £ currency formatting, handling commas as decimal separators in non-EU data); replaced nulls in Quantity/Discount with zeros; standardised text fields like Segment and Category using string functions; created hierarchies for drill-down (e.g., Year > Month > Week).
 - **Calculated Fields:** Developed fields for Year-over-Year (YoY) growth using DATEDIFF and LOOKUP for previous value comparisons; monthly/weekly trends with DATETRUNC('month', [Order Date]) and DATETRUNC('week', [Order Date]); profit margins as [Profit]/[Sales]; dynamic KPIs with IF YEAR([Order Date]) = [Current Year Parameter] THEN SUM([Sales]) ELSE 0 END; highest/lowest month identification using RANK(SUM([Sales])) OVER (ORDER BY SUM([Sales]) DESC); above/below average flags with IF SUM([Sales]) > WINDOW_AVG(SUM([Sales])) THEN 'Above' ELSE 'Below' END.
@@ -103,7 +103,7 @@ Specifications:
 
 ---
 
-## 🗃️ Repository Structure {#repository-structure}
+## Repository Structure {#repository-structure}
 
 ```bash
 tableau_sales_and_customer_project/
@@ -142,7 +142,7 @@ tableau_sales_and_customer_project/
 
 ---
 
-## © Licence {#licence}
+## Licence {#licence}
 
 This project is licensed under the [MIT License](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/LICENSE). You are free to use, modify, and share this project with proper attribution.
 
@@ -152,7 +152,7 @@ This project is licensed under the [MIT License](https://github.com/charlespught
 
 ---
 
-## 📩 Contact {#contact}
+## Contact {#contact}
 
 **For any enquiries or further information, please contact**:
 
