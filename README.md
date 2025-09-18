@@ -17,7 +17,9 @@
 
 Welcome to my **Tableau Sales and Customer Dashboards Project** repository!
 
-View the interactive dashboards on [Tableau Public](https://public.tableau.com/app/profile/charlespughtech/viz/tableau_sales_project/SalesDashboard). **Note: not optimised for mobile devices**
+View the interactive dashboards on [Tableau Public](https://public.tableau.com/app/profile/charlespughtech/viz/tableau_sales_project/SalesDashboard).
+
+(**Note: not optimised for mobile devices**)
 
 <a href="https://public.tableau.com/app/profile/charlespughtech/viz/tableau_sales_project/SalesDashboard">
 <img width="1174" height="872" alt="Sales Dashboard" src="https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/images/sales_dashboard.jpg" />
