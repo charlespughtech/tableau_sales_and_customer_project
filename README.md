@@ -107,33 +107,33 @@ tableau_sales_and_customer_project/
 │
 ├── datasets/                               # Project datasets (CSV files)
 │   ├── eu/                                 # EU number format versions
-│   │   ├── [Customers.csv](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/datasets/eu/Customers.csv)
-│   │   ├── [Location.csv](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/datasets/eu/Location.csv)
-│   │   ├── [Orders.csv](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/datasets/eu/Orders.csv)
-│   │   └── [Products.csv](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/datasets/eu/Products.csv)
+│   │   ├── Customers.csv
+│   │   ├── Location.csv
+│   │   ├── Orders.csv
+│   │   └── Products.csv
 │   └── non-eu/                            # Non-EU number format versions (used in project)
-│       ├── [Customers.csv](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/datasets/non-eu/Customers.csv)
-│       ├── [Location.csv](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/datasets/non-eu/Location.csv)
-│       ├── [Orders.csv](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/datasets/non-eu/Orders.csv)
-│       └── [Products.csv](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/datasets/non-eu/Products.csv)
+│       ├── Customers.csv
+│       ├── Location.csv
+│       ├── Orders.csv
+│       └── Products.csv
 │
 ├── images/                                # Dashboard images and icons
-│   ├── [Icon - Customer Dashboard (active).png](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/images/Icon%20-%20Customer%20Dashboard%20(active).png)
-│   ├── [Icon - Customer Dashboard.png](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/images/Icon%20-%20Customer%20Dashboard.png)
-│   ├── [Icon - Filter Hidden.png](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/images/Icon%20-%20Filter%20Hidden.png)
-│   ├── [Icon - Filter Shown.png](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/images/Icon%20-%20Filter%20Shown.png)
-│   ├── [Icon - Logo.png](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/images/Icon%20-%20Logo.png)
-│   ├── [Icon - Sales Dashboard(active).png](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/images/Icon%20-%20Sales%20Dashboard(active).png)
-│   ├── [Icon - Sales Dashboard.png](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/images/Icon%20-%20Sales%20Dashboard.png)
-│   ├── [sales_dashboard.jpg](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/images/sales_dashboard.jpg)
-│   └── [customer_dashboard.jpg](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/images/customer_dashboard.jpg)
+│   ├── Icon - Customer Dashboard (active).png
+│   ├── Icon - Customer Dashboard.png
+│   ├── Icon - Filter Hidden.png
+│   ├── Icon - Filter Shown.png
+│   ├── Icon - Logo.png
+│   ├── Icon - Sales Dashboard(active).png
+│   ├── Icon - Sales Dashboard.png
+│   ├── sales_dashboard.jpg
+│   └── customer_dashboard.jpg
 │
 ├── docs/                                  # Project documentation
-│   ├── [mockup.pdf](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/docs/mockup.pdf)                         # Dashboard sketches
-│   ├── [project_phases.pdf](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/docs/project_phases.pdf)                 # Design process steps
-│   └── [Tableau_Project_Requirements.pdf](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/docs/Tableau_Project_Requirements.pdf)   # Specifications
+│   ├── mockup.pdf                         # Dashboard sketches
+│   ├── project_phases.pdf                 # Design process steps
+│   └── Tableau_Project_Requirements.pdf   # Specifications
 │
-├── [tableau_sales_and_customer_project.twbx](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/tableau_sales_and_customer_project.twbx) # Packaged Tableau workbook
+├── tableau_sales_and_customer_project.twbx # Packaged Tableau workbook
 │
 ├── README.md                              # Project overview and instructions
 └── LICENSE                                # License information
