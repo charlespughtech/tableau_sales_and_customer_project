@@ -101,8 +101,8 @@ tableau_sales_and_customer_project/
 ## 🏆 Key Features & Deliverables
 
 - **Dynamic Dual Dashboards**  
-  *Sales Dashboard*: Trends in sales, profit, and quantity; subcategory and time-series breakdowns with KPIs, YoY comparisons, and minimum/maximum highlights.  
-  *Customer Dashboard*: Customer growth, sales per customer, orders trend, top customers and distribution – including tailored visuals for individual and summary analysis.
+  - *Sales Dashboard*: Trends in sales, profit, and quantity; subcategory and time-series breakdowns with KPIs, YoY comparisons, and minimum/maximum highlights.  
+  - *Customer Dashboard*: Customer growth, sales per customer, orders trend, top customers and distribution – including tailored visuals for individual and summary analysis.
 
 - **Modern Interactivity**  
   - Clickable navigation buttons (image-based, highlights active view)
