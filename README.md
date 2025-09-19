@@ -1,6 +1,6 @@
 # 📊 Tableau Sales & Customer Analytics Project
 
-#### View the live dashboards now on Tableau Public:  
+#### View the live dashboards and worksheets now on Tableau Public:  
 [Tableau Sales & Customer Dashboards Project](https://public.tableau.com/app/profile/charlespughtech/viz/tableau_sales_project/SalesDashboard)
 
 ---
