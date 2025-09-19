@@ -1,4 +1,100 @@
-*All files above are hyperlinked in the repo for quick navigation.*
+# 📊 Tableau Sales & Customer Analytics Project
+
+#### View the live dashboards now on Tableau Public:  
+[Tableau Sales & Customer Dashboards Project](https://public.tableau.com/app/profile/charlespughtech/viz/tableau_sales_project/SalesDashboard)
+
+---
+
+**Project Repository URL:**  
+[charlespughtech/tableau_sales_and_customer_project](https://github.com/charlespughtech/tableau_sales_and_customer_project)
+
+---
+
+**Author:** Charles Pugh – Google-certified Data Analyst  
+**Website:** [https://charlespughtech.github.io/](https://charlespughtech.github.io/)  
+**Email:** [charlespughtech@gmail.com](mailto:charlespughtech@gmail.com)  
+**LinkedIn:** [https://www.linkedin.com/in/charlespughtech/](https://www.linkedin.com/in/charlespughtech/)  
+**Date:** 2025-09-19  
+
+---
+
+Welcome to my **Tableau Sales & Customer Analytics Project**!  
+
+---
+
+## 📖 Project Overview
+
+This dashboard-driven project demonstrates a complete sales and customer analytics workflow in Tableau – from connecting and modelling data, through to dynamic dashboard delivery and business insight.
+
+- Covers *end-to-end analytics*: data preparation, calculated fields, KPIs, dynamic visuals, user navigation, and reporting.
+- Designed for clarity, interactivity, and modern dashboard best-practice.
+
+---
+
+## 🗂️ Project Navigation
+
+- [Sales Dashboard on Tableau Public](https://public.tableau.com/app/profile/charlespughtech/viz/tableau_sales_project/SalesDashboard)
+- [Dataset Download (non-EU)](https://github.com/charlespughtech/tableau_sales_and_customer_project/tree/main/datasets/non-eu/)
+- [Dataset Download (EU)](https://github.com/charlespughtech/tableau_sales_and_customer_project/tree/main/datasets/eu/)
+- [Requirements PDF](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/docs/Tableau_Project_Requirements.pdf)
+- [Project Phases PDF](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/docs/project_phases.pdf) (credit: [DataWithBaraa](https://github.com/DataWithBaraa/))
+- [Mockup PDF](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/docs/mockup.pdf) (credit: [DataWithBaraa](https://github.com/DataWithBaraa/))
+- [Images Folder](https://github.com/charlespughtech/tableau_sales_and_customer_project/tree/main/images/)
+- [Project Tableau Workbook](https://github.com/charlespughtech/tableau_sales_and_customer_project/blob/main/tableau_sales_and_customer_project.twbx)
+
+---
+
+## 🌳 Repository Branch & Directory Layout
+
+This project uses a **single `main` branch** structure for simplicity and transparency. All resources are stored within a clearly organised directory tree:
+
+---
+
+```bash
+
+tableau_sales_and_customer_project/
+├── datasets/
+│ ├── eu/
+│ │ ├── Customers.csv
+│ │ ├── Orders.csv
+│ │ ├── Products.csv
+│ │ └── Location.csv
+│ └── non-eu/
+│ ├── Customers.csv
+│ ├── Orders.csv
+│ ├── Products.csv
+│ └── Location.csv
+├── docs/
+│ ├── Tableau_Project_Requirements.pdf
+│ ├── mockup.pdf
+│ └── project_phases.pdf
+├── images/
+│ ├── Icon - Customer Dashboard (active).png
+│ ├── Icon - Customer Dashboard.png
+│ ├── Icon - Filter Hidden.png
+│ ├── Icon - Filter Shown.png
+│ ├── Icon - Logo.png
+│ ├── Icon - Sales Dashboard(active).png
+│ ├── Icon - Sales Dashboard.png
+│ ├── sales_dashboard.jpg
+│ └── customer_dashboard.jpg
+├── LICENSE
+├── README.md
+└── tableau_sales_and_customer_project.twbx
+
+```
+
+---
+
+
+- **`datasets/`** — Contains all .csv files (EU and non-EU formats) for immediate analysis.
+- **`docs/`** — Holds all core project documentation PDFs (requirements, blueprints, phases).
+- **`images/`** — Includes navigation icons, logos, and dashboard screenshots for branding and README embedding.
+- **`tableau_sales_and_customer_project.twbx`** — The fully packaged Tableau workbook with all dashboards, calculated fields, and settings.
+- **`LICENSE`** — Licensed under MIT for open sharing.
+- **`README.md`** — Comprehensive project documentation (this file).
+
+### 🔗 [Browse the repository directly on GitHub](https://github.com/charlespughtech/tableau_sales_and_customer_project/)
 
 ---
 
@@ -73,4 +169,4 @@
 ---
 
 *For feedback, collab, or questions, reach out via [email](mailto:charlespughtech@gmail.com) or connect on [LinkedIn](https://www.linkedin.com/in/charlespughtech/).*
-
+---
