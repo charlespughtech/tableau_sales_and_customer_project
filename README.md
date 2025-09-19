@@ -1,13 +1,5 @@
 # 📊 Tableau Sales & Customer Analytics Project
 
-#### View the live dashboards and worksheets now on Tableau Public:  
-[Tableau Sales & Customer Dashboards Project](https://public.tableau.com/app/profile/charlespughtech/viz/tableau_sales_project/SalesDashboard)
-
----
-
-**Project Repository URL:**  
-[charlespughtech/tableau_sales_and_customer_project](https://github.com/charlespughtech/tableau_sales_and_customer_project)
-
 ---
 
 **Author:** Charles Pugh – Google-certified Data Analyst  
@@ -19,6 +11,16 @@
 ---
 
 Welcome to my **Tableau Sales & Customer Analytics Project**!  
+
+---
+
+#### View the live dashboards and worksheets now on Tableau Public:  
+[Tableau Sales & Customer Dashboards Project](https://public.tableau.com/app/profile/charlespughtech/viz/tableau_sales_project/SalesDashboard)
+
+---
+
+**Project Repository URL:**  
+[charlespughtech/tableau_sales_and_customer_project](https://github.com/charlespughtech/tableau_sales_and_customer_project)
 
 ---
 
